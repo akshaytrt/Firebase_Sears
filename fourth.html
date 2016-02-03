@@ -12,9 +12,9 @@
 	<script>
 		var myFirebaseRef = new Firebase("https://akshay101.firebaseio.com/");
 		
-			myFirebaseRef.child("first").on("value", function(snapshot) {
+			myFirebaseRef.child("fourth").on("value", function(snapshot) {
 			var msg1=snapshot.val();
-			document.getElementById('news11').innerHTML=msg1;
+			document.getElementById('news44').innerHTML=msg1;
 			});
 			
 			
@@ -33,7 +33,7 @@
 					</div>		
 					<div id="content">	
 						
-						<div id="news11">
+						<div id="news44">
 						</div>
 					</div>
 

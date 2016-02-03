@@ -7,9 +7,18 @@
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
 	<script src="a1.js" type="text/javascript"></script>
 	</head>
+	<script>
+		var myFirebaseRef = new Firebase("https://akshay101.firebaseio.com/");
+		
+			myFirebaseRef.child("third").on("value", function(snapshot) {
+			var msg3=snapshot.val();
+			document.getElementById('news33').innerHTML=msg3;
+			});
 	
+	</script>
 	
 
 	<body>
@@ -21,14 +30,9 @@
 					</div>		
 					
 					<div id="content">	
-							<h2>Sears India to get all it R&D work of parent company</h2>
-							<p>United States-based Sears Holdings Corporation (SHC) is planning to move its entire information technology (IT)-related research and development activities to its Pune-based captive company, Sears India.
+							<div id="news33">
 
-Sears India, which started its operations in December 2009, provides technology solutions and retail business process automation solutions to support all business units within SHC, which is ranked as the fourth-largest broadline retailer in North America and listed as a US Fortune 50 and Global Fortune 200 enterprise.</p>
-<p><q>At present Sears India handles 35% of the total IT needs of SHC, including application developments, support, testing facilities, proof-of-concept labs and software product development. SHC is now planning to have the entire development and research activities, along with support and maintenance activities, moved to Sears India within the next two years</q> said the chief executive officer (CEO) of Sears India, Alok Kumar.</p>
-
-<p>Kumar, a senior IT management expert who has worked with Reliance Industries, attributed the phenomenal success of Sears India to several factors. <q>We created a high degree of trust between US and India operations by means of regular visits by the stakeholders from the US and holding discussions that enabled us to meet targets. Unlike many other captives that charge on headcount, Sears India kept work content as the benchmark for making estimations</q> Kumar said.</p>
-					</div>			
+							</div>
 					<div id="footers">
 							<div class="addr">
 								<div class="align fontHead">

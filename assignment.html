@@ -33,6 +33,13 @@
 			var msg3=snapshot.val();
 			document.getElementById('news3').innerHTML=msg3;
 			});
+			
+			var myFirebaseRef = new Firebase("https://akshay101.firebaseio.com/");
+		
+			myFirebaseRef.child("fourth").on("value", function(snapshot) {
+			var msg4=snapshot.val();
+			document.getElementById('new4').innerHTML=msg4;
+			});
 	
 	</script>
 	</head>
@@ -93,7 +100,13 @@
 											
 											
 										</div>
-										
+										<div class="flex-item">
+											
+											<div id="news4"></div>
+											<div><a href="fourth.html">Read More</a></div>
+											
+											
+										</div>
 											
 												
 																			

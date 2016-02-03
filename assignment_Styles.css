@@ -104,7 +104,7 @@ float:right;
 width:55%;
 
 }
-#news1,#news2,#news3{
+#news1,#news2,#news3,#news4{
 overflow:hidden;
 text-overflow:ellipsis;
 white-space:nowrap;
